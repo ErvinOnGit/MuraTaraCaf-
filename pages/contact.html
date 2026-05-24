@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Brew & Bloom Cafe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="logo">MuraTara<span> Café</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="schedule.html">Hours</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <img src="../images/hero.jpg" alt="Cafe exterior" class="bg-img" />
+    <div class="bg-overlay"></div>
+
+    <h1>Say Hello</h1>
+    <p>Reservations, events, or just a chat — we'd love to hear from you.</p>
+  </section>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <aside class="contact-info">
+            <h3>Get in touch</h3>
+            <p>Send us a message and we'll get back to you within one business day.</p>
+
+            <div class="info-item">
+              <strong>Address</strong>
+              666 Merencillio Street<br/>Malate Manila, Philippines
+            </div>
+            <div class="info-item">
+              <strong>Email</strong>
+              ervinmalate806@gmail.com
+            </div>
+            <div class="info-item">
+              <strong>Phone</strong>
+              +63 962 909 4136
+            </div>
+            <div class="info-item">
+              <strong>Hours</strong>
+              Mon–Sun · 7:00 AM – 9:00 PM
+            </div>
+          </aside>
+
+          <form action="mailto:ervinmalate806@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="Full_Name" placeholder="Juan Dela Cruz" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" placeholder="you@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="Contact_Number" placeholder="+63 917 000 0000" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Inquiry Type</label>
+                <select id="subject" name="Subject" required>
+                  <option value="">Select one…</option>
+                  <option>General Inquiry</option>
+                  <option>Reservation</option>
+                  <option>Event Booking</option>
+                  <option>Catering</option>
+                  <option>Feedback</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="Message" rows="5" placeholder="Tell us what's on your mind…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>MuraTara Café</h4>
+        <p>A quiet corner cafe serving hand-poured coffee, fresh pastries, and slow mornings since 2019.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>666 Merencillio Street</li>
+          <li>Malate Manila, PH</li>
+          <li>Open daily 7am–9pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 MuraTara Café. All rights reserved.</div>
+  </footer>
+</body>
+</html>

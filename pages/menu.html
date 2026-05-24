@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu & Order — Brew & Bloom Cafe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="logo">MuraTara<span> Café</span></a>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="schedule.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <img src="../images/hero.jpg" alt="Coffee spread" class="bg-img" />
+    <div class="bg-overlay"></div>
+
+    <h1>Our Menu</h1>
+    <p>Select your items below to place an email order for pickup.</p>
+  </section>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Signatures</span>
+          <h2>Made fresh, every day</h2>
+        </div>
+
+        <!-- Order Form connected to Gmail via mailto -->
+        <!-- REPLACE "your-email@gmail.com" WITH YOUR ACTUAL GMAIL ADDRESS -->
+        <form action="mailto:ervinmalate806@gmail.com?subject=New Cafe Order" method="POST" enctype="text/plain" class="order-form">
+          
+          <div class="card-grid">
+            <!-- Item 1 -->
+            <article class="card">
+              <img src="../images/cappuccino.jpg" alt="Cappuccino with latte art" />
+              <div class="card-body">
+                <h3>Classic Cappuccino</h3>
+                <p>Double espresso with velvet-steamed milk and a delicate foam crown.</p>
+                <div class="price-row">
+                  <div class="price">₱65</div>
+                  <div class="qty-control">
+                    <label for="qty-cap">Qty:</label>
+                    <input type="number" id="qty-cap" name="Qty_Classic_Cappuccino" min="0" value="0" class="qty-input" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="card">
+              <img src="../images/macchiato.jpg" alt="Iced caramel macchiato" />
+              <div class="card-body">
+                <h3>Iced Caramel Macchiato</h3>
+                <p>Cold milk, espresso, and house-made caramel layered over ice.</p>
+                <div class="price-row">
+                  <div class="price">₱69</div>
+                  <div class="qty-control">
+                    <label for="qty-mac">Qty:</label>
+                    <input type="number" id="qty-mac" name="Qty_Iced_Caramel_Macchiato" min="0" value="0" class="qty-input" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="card">
+              <img src="../images/matcha.jpg" alt="Matcha latte" />
+              <div class="card-body">
+                <h3>Ceremonial Matcha Latte</h3>
+                <p>Stone-ground Japanese matcha whisked into warm oat milk.</p>
+                <div class="price-row">
+                  <div class="price">₱59</div>
+                  <div class="qty-control">
+                    <label for="qty-mat">Qty:</label>
+                    <input type="number" id="qty-mat" name="Qty_Matcha_Latte" min="0" value="0" class="qty-input" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="card">
+              <img src="../images/croissant.jpg" alt="Butter croissant" />
+              <div class="card-body">
+                <h3>Butter Croissant</h3>
+                <p>72-hour fermented dough, laminated by hand, baked golden each morning.</p>
+                <div class="price-row">
+                  <div class="price">₱80</div>
+                  <div class="qty-control">
+                    <label for="qty-cro">Qty:</label>
+                    <input type="number" id="qty-cro" name="Qty_Butter_Croissant" min="0" value="0" class="qty-input" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 5 -->
+            <article class="card">
+              <img src="../images/cheesecake.jpg" alt="Blueberry cheesecake" />
+              <div class="card-body">
+                <h3>Blueberry Cheesecake</h3>
+                <p>Creamy basque-style cheesecake topped with wild blueberries.</p>
+                <div class="price-row">
+                  <div class="price">₱85</div>
+                  <div class="qty-control">
+                    <label for="qty-che">Qty:</label>
+                    <input type="number" id="qty-che" name="Qty_Blueberry_Cheesecake" min="0" value="0" class="qty-input" />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 6 -->
+            <article class="card">
+              <img src="../images/toast.jpg" alt="Avocado toast with poached egg" />
+              <div class="card-body">
+                <h3>Avocado Sourdough</h3>
+                <p>House sourdough with smashed avocado, poached egg, and chili oil.</p>
+                <div class="price-row">
+                  <div class="price">₱79</div>
+                  <div class="qty-control">
+                    <label for="qty-avo">Qty:</label>
+                    <input type="number" id="qty-avo" name="Qty_Avocado_Sourdough" min="0" value="0" class="qty-input" />
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Customer Order Details Checkout Box -->
+          <div class="order-checkout bg-beige">
+            <h3>Complete Your Order</h3>
+            <p>Enter your details below to finalize your pickup order. Submitting will open your email client.</p>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customer-name">Full Name</label>
+                <input type="text" id="customer-name" name="Customer_Name" placeholder="Juan Dela Cruz" required />
+              </div>
+              <div class="form-group">
+                <label for="pickup-time">Desired Pickup Time</label>
+                <input type="time" id="pickup-time" name="Pickup_Time" required />
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="order-notes">Special Instructions (Optional)</label>
+              <textarea id="order-notes" name="Special_Instructions" rows="3" placeholder="E.g., Extra hot, oat milk please..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Order via Email</button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>MuraTara Café</h4>
+        <p>A quiet corner cafe serving hand-poured coffee, fresh pastries, and slow mornings since 2019.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>666 Merencillio Street</li>
+          <li>Malate Manila, PH</li>
+          <li>Open daily 7am–9pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 MuraTara Café. All rights reserved.</div>
+  </footer>
+</body>
+</html>
